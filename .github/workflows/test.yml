@@ -30,3 +30,14 @@ jobs:
         with:
           path: k6-script.js
           flags: --vus 1 --duration 10s --out json=results.json --summary-export=summary.json
+
+      - name: Upload k6 Test Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: k6-test-results
+          path: |
+            results.json
+            summary.json
+            k6-script.js
+          retention-days: 30

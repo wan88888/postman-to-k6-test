@@ -1,7 +1,5 @@
 # Postman to k6 Load Testing
 
-[![Load Testing](https://github.com/YOUR_USERNAME/postman-to-k6-test/actions/workflows/test.yml/badge.svg)](https://github.com/YOUR_USERNAME/postman-to-k6-test/actions/workflows/test.yml)
-
 > 🚀 使用 Postman Collection 自动生成 k6 负载测试脚本，并在 GitHub Actions 中运行
 
 ## 📖 项目简介
@@ -159,4 +157,3 @@ postman-to-k6 postman/collection.json \
 ## 📝 License
 
 MIT License
-
